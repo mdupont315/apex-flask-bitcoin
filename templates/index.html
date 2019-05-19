@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard - Dark Style</title>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/styles.css') }}">
+
+
+</head>
+
+<body>
+
+
+	<div id="wrapper">
+		<div class="content-area">
+			<div class="container-fluid">
+				<div class="main">
+						<div class="row mt-4">
+								<div class="col-md-12" >
+										<h1 class="h1"  style="color: white; padding: 5px; text-align: center"> Data Visualization</h1>
+										<h4 class="h1"  style=" padding: 5px; text-align: center"> Python, Flask, Javascript, and Apexcharts</h4>
+										<p style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi perspiciatis accusamus sint, corrupti pariatur quidem eum aliquid recusandae molestias natus fuga ipsa qui eligendi velit quaerat assumenda, incidunt eveniet.</p>
+										<p style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi perspiciatis accusamus sint, corrupti pariatur quidem eum aliquid recusandae molestias natus fuga ipsa qui eligendi velit quaerat assumenda, incidunt eveniet.</p>						
+								</div>
+							</div>
+						<div class="row sparkboxes mt-4">
+								<div class="col-md-3">
+									<div class="box box1">
+										<div class="details">
+												<h3 id="metric-a">  </h3>
+												<h4 >Metric A</h4>
+										</div>
+										<div id="spark1"></div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="box box2">
+											<div class="details">
+												<h3 id="metric-b"></h3>
+												<h4>Metric B</h4>
+											</div>
+										<div id="spark2"></div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="box box3">
+											<div class="details">
+												<h3 id="metric-c" ></h3>
+												<h4>Metric C</h4>
+											</div>
+										<div id="spark3"></div>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="box box4">
+										<div class="details">
+											<h3 id="metric-d" > </h3>
+											<h4>Metric D</h4>
+										</div>
+										<div id="spark4"></div>
+									</div>
+								</div>
+							</div>
+	
+					<div class="row mt-8">
+						<div class="col-md-12">
+							<div class="box shadow mt-4">
+								<div id="multi-line" class=""> </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-4">
+						<div class="col-md-5">
+							<div class="box shadow mt-4">
+								<div id="barchart"></div>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="box shadow mt-4">
+								<div id="areachart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+	<script src="{{url_for('script')}}"></script>
+
+
+	<script>
+	</script>
+</body>
+
+</html>

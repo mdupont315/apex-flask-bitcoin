@@ -1,0 +1,36 @@
+<div id="visualization"></div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.js"></script>
+<script type="text/javascript">
+    var myjson = {{ jsondata }};
+    // Create and populate a data table.
+    var data = new vis.DataSet();
+    data.add(myjson)
+    // create some nice looking data with sin/cos    }
+    
+    // specify options
+    var options = {
+      sort: false,
+      sampling:false,
+      style:'points',
+      dataAxis: {
+          left: {
+              range: {
+                  min: 300, max: 800
+              }
+          }
+      },
+      drawPoints: {
+          enabled: true,
+          size: 6,
+          style: 'circle' // square, circle
+      },
+      defaultGroup: 'Scatterplot',
+      height: '600px'
+  }
+    var container = document.getElementById('visualization');
+    var graph2d = new vis.Graph2d(container, data, options);
+    // Instantiate our graph object.
+    console.log(data);
+
+    
+</script>
