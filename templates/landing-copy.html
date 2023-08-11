@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard - Dark Style</title>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/styles.css') }}">
+
+
+</head>
+
+<body>
+	<style type="text/css">
+		#centered {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+
+
+	<div id="wrapper">
+		<div class="content-area">
+			<div class="container-fluid">
+				<div class="main">
+						<div class="row mt-4">
+								<div class="col-md-12" >
+										<h1 class="h1"  style="color: white; padding: 5px; text-align: center"> Data Visualization</h1>
+										<h4 class="h1"  style=" padding: 5px; text-align: center"> Python, Flask, Javascript, and Apexcharts</h4>
+								</div>
+							</div>
+							<div class="row mt-4" style="justify-content: center; display: flex ">
+								<a href="/dashboard">
+									<button type="button" class="btn btn-primary"> View Data </button>
+								</a>
+			
+							</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+	<script src="{{url_for('script')}}"></script>
+
+
+	<script>
+	</script>
+</body>
+
+</html>
